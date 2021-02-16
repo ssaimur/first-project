@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: #f1f5f8;
+}
+
+img {
+  width: 198px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+/* loading */
+.loading {
+  font-size: 100px;
+  margin-top: 200px;
+  margin-left: 500px;
+}
+/* loading */
+
+nav {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(138, 43, 226, 0.23);
+  position: fixed;
+  top: 0;
+  background-color: #f1f5f8;
+  z-index: 999999;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* this is the logo part */
+
+.logo {
+  font-size: 24px;
+  padding: 5px;
+  color: #000;
+}
+
+/* here comes the nav menu part */
+.nav-menu {
+  width: auto;
+}
+.nav-menu ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: block;
+  padding: 10px;
+  text-transform: capitalize;
+  transition: 0.5s ease;
+  color: blueviolet;
+}
+
+.nav-menu ul li a:hover {
+  color: #000;
+}
+
+/* here comes the cart icon part */
+
+.cart-icon {
+  font-size: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blueviolet;
+  position: relative;
+}
+
+.cart-icon .cart-num {
+  position: absolute;
+  font-size: 16px;
+  background-color: black;
+  color: yellow;
+  padding: 5px;
+  border-radius: 50%;
+  top: 2px;
+  right: 0;
+}
+.margin {
+  margin-top: 80px;
+}
+
+.lists {
+  width: 80%;
+  margin: auto;
+}
+
+.taka50 {
+  text-align: center;
+  font-size: 32px;
+  margin: 20px;
+}
+
+/* each card starts here  */
+
+.flex-items {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 20px;
+  justify-content: space-between;
+}
+.card > a {
+  text-decoration: none;
+  color: black;
+}
+
+.card {
+  height: auto;
+  width: 90%;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
+  transition: 0.5s;
+  position: relative;
+}
+.card:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.19), 0 9px 9px rgba(0, 0, 0, 0.23);
+}
+.card img {
+  display: block;
+  margin: 10px auto 10px;
+}
+
+.card .footer {
+  margin: 8px;
+  background-color: #f1f5f8;
+  border-radius: 5px;
+}
+.floating-div {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: yellow;
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.footer .description,
+.footer .buttons {
+  margin: 2px 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons button {
+  border: none;
+  font-size: 1.02rem;
+  border-radius: 5px;
+  color: blueviolet;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.buttons button:hover {
+  color: rgb(95, 33, 153);
+}
+
+.line {
+  height: auto;
+  width: 1px;
+  background-color: black;
+}
+
+/* cart conaiter starts */
+
+.cart-container {
+  width: 80%;
+  margin: 0px auto 100px;
+}
+
+.common {
+  border-bottom: 2px solid black;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 80px;
+  grid-gap: 40px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.item-grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: normal;
+  align-items: center;
+  border-bottom: 1px dashed black;
+  border-top: 1px dashed black;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+}
+
+.item-name img {
+  height: 60px;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.rmv {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.rmv-all button {
+  scale: 1.2;
+}
+
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 80px;
+  text-align: center;
+  grid-gap: 40px;
+  border-top: 2px solid brown;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.bottom-grid button {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.zero {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.zero p {
+  font-size: 3rem;
+}
+.zero button {
+  font-size: 3rem;
+}
+
+.detail-comp {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-column-gap: 20px;
+}
+.detail-part {
+  /* width: 68%; */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.detail-part span {
+  font-weight: bold;
+}
+
+.detail-part button {
+  width: 200px;
+  height: 30px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.detail-part .img-part {
+  /* width: 28%; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ajaira-kotha {
+  text-align: center;
+  margin: 40px 0;
+}
+.ajaira-kotha h2 {
+  margin-bottom: 10px;
+}
+.ajaira-kotha button {
+  font-size: 1.2rem;
+}
+
+.about-page {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.about-page h1 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-page p {
+  width: 80%;
+  margin: 0 auto;
+}
